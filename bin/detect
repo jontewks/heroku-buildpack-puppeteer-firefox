@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-echo "Puppeteer"
+echo "Puppeteer-firefox"
 exit 0
