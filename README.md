@@ -7,13 +7,13 @@ Installs dependencies needed in order to run puppeteer on heroku using Firefox i
 To use the latest stable version run:
 
 ```sh-session
-$ heroku buildpacks:add jontewks/puppeteer
+$ heroku buildpacks:add jontewks/puppeteer-firefox
 ```
 
 Or use the source code in this repository:
 
 ```sh-session
-$ heroku buildpacks:add https://github.com/jontewks/puppeteer-heroku-buildpack.git
+$ heroku buildpacks:add https://github.com/jontewks/heroku-buildpack-puppeteer-firefox.git
 ```
 
 ## Issues
