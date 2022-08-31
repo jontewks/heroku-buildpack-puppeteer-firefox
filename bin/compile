@@ -50,6 +50,7 @@ PACKAGES="
   libxrandr2
   libxss1
   libxtst6
+  libdbus-glib-1-2
 "
 
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
