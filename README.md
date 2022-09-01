@@ -1,6 +1,15 @@
 # heroku-buildpack-puppeteer-firefox
 
-Installs dependencies needed in order to run puppeteer on heroku using Firefox instead of Chrome. Be sure to include `{ args: ['--no-sandbox'] }` in your call to `puppeteer.launch`. 
+Installs dependencies needed in order to run puppeteer on heroku using Firefox instead of Chrome. Be sure to include
+
+```
+{
+  args: ['--no-sandbox'],
+  product: 'firefox'
+}
+```
+
+in your call to `puppeteer.launch`.
 
 ## Usage
 
@@ -16,7 +25,7 @@ Or use the source code in this repository:
 $ heroku buildpacks:add https://github.com/jontewks/heroku-buildpack-puppeteer-firefox.git
 ```
 
-You'll also need to add an environment variable of `PUPPETEER_PRODUCT=firefox` on heroku.
+You'll also need to add an environment variable of `PUPPETEER_PRODUCT=firefox` on heroku so firefox will be installed instead of chromium.
 
 ## Issues
 
